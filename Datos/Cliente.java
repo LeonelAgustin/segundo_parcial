@@ -2,7 +2,6 @@ package Datos;
 
 import java.util.LinkedList;
 
-import javax.swing.JOptionPane;
 
 public class Cliente extends Socio {
 	private int id_cleinte;
