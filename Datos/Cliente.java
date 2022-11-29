@@ -1,6 +1,5 @@
 package Datos;
 
-import java.util.LinkedList;
 
 
 public class Cliente extends Socio {
