@@ -10,7 +10,7 @@ import Datos.Cliente;
 public class Main {
 
 	public static void main(String[] args) {
-		int total = 0;
+		double total = 0;
 		String entrar = "si";
 		LinkedList <Venta> ventas = new LinkedList <Venta>();
 		// auxiliares para manejar y llamar los metodos 
@@ -49,7 +49,7 @@ public class Main {
 			case 2:// mas vendido
 				venta1.masVendido(ventas);			
 				break;
-			case 3:// ttoal recaudado
+			case 3:// total recaudado
 				for (Venta venta : ventas) {
 					total+=venta.getTotalCobrado();
 				}
@@ -63,10 +63,7 @@ public class Main {
 				JOptionPane.showMessageDialog(null, ventasDescuentos);
 				break;
 			}	
-		} while (b==5);
-		
-		
-			
+		} while (b!=5);
 		
 		
 	}

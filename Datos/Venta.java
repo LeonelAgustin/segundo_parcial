@@ -8,16 +8,16 @@ public class Venta {
 	private int id_venta;
 	private int cantidad;// cantidad de cafes en 1 venta
 	private Cafe cafe;
-	private int totalCobrado;
-	private boolean descuento;
+	private double totalCobrado;
+	private boolean descontado;
 	
-	public Venta(int id_venta, int cantidad, Cafe cafe, int totalCobrado, boolean descuento) {
+	public Venta(int id_venta, int cantidad, Cafe cafe, double d, boolean descuento) {
 		super();
 		this.id_venta = id_venta;
 		this.cantidad = cantidad;
 		this.cafe = cafe;
-		this.totalCobrado = totalCobrado;
-		this.descuento = descuento;
+		this.totalCobrado = d;
+		this.descontado = descuento;
 	}
 	public int getId_venta() {
 		return id_venta;
@@ -38,7 +38,7 @@ public class Venta {
 		this.cafe = cafe;
 	}
 	
-	public int getTotalCobrado() {
+	public double getTotalCobrado() {
 		return totalCobrado;
 	}
 	public void setTotalCobrado(int totalCobrado) {
@@ -46,10 +46,10 @@ public class Venta {
 	}
 	
 	public boolean isDescuento() {
-		return descuento;
+		return descontado;
 	}
 	public void setDescuento(boolean descuento) {
-		this.descuento = descuento;
+		this.descontado = descuento;
 	}
 	@Override
 	public String toString() {
